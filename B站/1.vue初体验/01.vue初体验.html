@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">{{name}}
+
+        <h1>{{user}}</h1>
+    </div>
+    <script src="js/vue.js"></script>//引入vue源文件
+    <script>
+        //这种编程方式叫  声明式
+        const he = new Vue({
+            el:"#app",//el 代表将vue挂载到哪个标签上
+            data:{//需要显示的数据，可以自己定义，也可以是网络数据
+                name:"贺荘",
+                user:2509366215
+            }
+        })
+    </script>
+</body>
+</html>

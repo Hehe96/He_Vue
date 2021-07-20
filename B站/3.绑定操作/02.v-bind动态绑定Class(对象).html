@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- <div v-bind:class = "{active:isActive , line:isLin}">{{name}}</div> -->
+        <div :class = "{active:isActive , line:isLin}">{{name}}</div> //简写
+        <div>{{name}}</div>
+        <h1>{{name}}</h1>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                name:'VUE',
+                isActive:true,
+                isLin:true
+                // active:'active'
+
+            },
+            method:"你好Vue"
+        })
+    </script>
+</body>
+</html>

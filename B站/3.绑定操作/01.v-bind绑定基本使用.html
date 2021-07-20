@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- <img v-bind:src="imgUrl" alt=""> -->
+        <img :src="imgUrl" alt="">//简写
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                name:'VUE',
+                imgUrl:"https://img11.360buyimg.com/babel/s1180x940_jfs/t1/195584/15/11809/134378/60e2ebe5Eb1cc0631/98612c768c629695.jpg.webp"
+            },
+            method:"你好Vue"
+        })
+    </script>
+</body>
+</html>
